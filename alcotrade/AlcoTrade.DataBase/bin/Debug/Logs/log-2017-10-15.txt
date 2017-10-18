@@ -1,0 +1,343 @@
+ (INFO)13:57:21.5834: Операция: Пересоздание БД
+ (INFO)13:57:21.5914: Cтроки подключения:
+ (INFO)13:57:21.5914: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)13:57:21.5914: Удаление БД : 
+ (INFO)13:57:22.0115: База данных успешно удалена
+ (INFO)13:57:22.0115: Обновление БД : 
+ (INFO)13:57:23.0695: Установка миграции 1.1.170705_InitTable
+
+ ---FATAL----in BB.DataBase.vshost----on PORNSTAR----2017-10-15 13:57:23.3145-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "VentProm", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 535
+   at BB.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 441
+   at BB.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 306
+   at BB.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 271
+   at BB.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 719
+   at BB.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 176
+   at BB.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)13:57:35.0952: Операция: Пересоздание БД
+ (INFO)13:57:35.0952: Cтроки подключения:
+ (INFO)13:57:35.0952: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)13:57:35.0952: Удаление БД : 
+ (INFO)13:57:35.2472: База данных не обнаружена
+ (INFO)13:57:35.2472: Обновление БД : 
+ (INFO)13:57:46.1098: Установка миграции 1.1.170705_InitTable
+
+ ---FATAL----in BB.DataBase.vshost----on PORNSTAR----2017-10-15 13:57:46.4179-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "VentProm", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 535
+   at BB.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 441
+   at BB.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 306
+   at BB.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 271
+   at BB.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 719
+   at BB.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 176
+   at BB.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)13:57:52.0782: Операция: Пересоздание БД
+ (INFO)13:57:52.0852: Cтроки подключения:
+ (INFO)13:57:52.0852: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)13:57:52.0852: Удаление БД : 
+ (INFO)13:57:52.1742: База данных не обнаружена
+ (INFO)13:57:52.1742: Обновление БД : 
+ (INFO)13:58:02.7388: Установка миграции 1.1.170705_InitTable
+
+ ---FATAL----in BB.DataBase----on PORNSTAR----2017-10-15 13:58:02.7938-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "VentProm", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 535
+   at BB.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 441
+   at BB.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 306
+   at BB.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 271
+   at BB.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 719
+   at BB.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 176
+   at BB.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)13:58:50.6025: Операция: Пересоздание БД
+ (INFO)13:58:50.6025: Cтроки подключения:
+ (INFO)13:58:50.6025: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)13:58:50.6025: Удаление БД : 
+ (INFO)13:58:50.7275: База данных не обнаружена
+ (INFO)13:58:50.7275: Обновление БД : 
+ (INFO)13:59:01.4321: Установка миграции 1.1.170705_InitTable
+
+ ---FATAL----in BB.DataBase----on PORNSTAR----2017-10-15 13:59:01.5041-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "VentProm", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 535
+   at BB.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 441
+   at BB.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 306
+   at BB.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 271
+   at BB.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 719
+   at BB.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 176
+   at BB.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)13:59:11.2917: Операция: Пересоздание БД
+ (INFO)13:59:11.3017: Cтроки подключения:
+ (INFO)13:59:11.3017: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)13:59:11.3017: Удаление БД : 
+ (INFO)13:59:11.4687: База данных не обнаружена
+ (INFO)13:59:11.4687: Обновление БД : 
+ (INFO)13:59:22.2353: Установка миграции 1.1.170705_InitTable
+
+ ---FATAL----in BB.DataBase.vshost----on PORNSTAR----2017-10-15 13:59:22.4253-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "VentProm", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 535
+   at BB.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 441
+   at BB.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 306
+   at BB.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 271
+   at BB.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 719
+   at BB.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 176
+   at BB.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)14:00:11.9362: Операция: Пересоздание БД
+ (INFO)14:00:11.9442: Cтроки подключения:
+ (INFO)14:00:11.9442: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)14:00:11.9442: Удаление БД : 
+ (INFO)14:00:12.0682: База данных не обнаружена
+ (INFO)14:00:12.0682: Обновление БД : 
+ (INFO)14:00:22.6268: Установка миграции 1.1.170705_InitTable
+
+ ---FATAL----in BB.DataBase----on PORNSTAR----2017-10-15 14:00:22.6788-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "VentProm", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at BB.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 535
+   at BB.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 441
+   at BB.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 306
+   at BB.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 271
+   at BB.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 719
+   at BB.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\ventprom\BB.Common.Migrations\DbMigrator.cs:line 266
+   at BB.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 176
+   at BB.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\ventprom\BB.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)14:01:50.6748: Операция: Пересоздание БД
+ (INFO)14:01:50.6748: Cтроки подключения:
+ (INFO)14:01:50.6748: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)14:01:50.6748: Удаление БД : 
+ (INFO)14:01:50.8458: База данных не обнаружена
+ (INFO)14:01:50.8458: Обновление БД : 
+ (INFO)14:02:01.7085: Установка миграции 1.1.170705_InitTable
+ (INFO)14:02:01.8595: Создание представления изменений в версии для таблиц 
+ (INFO)14:02:01.8845: Успешно проведено обновление до миграции 1.1.170705_InitTable
+ (INFO)14:51:39.4268: Операция: Пересоздание БД
+ (INFO)14:51:39.4338: Cтроки подключения:
+ (INFO)14:51:39.4338: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)14:51:39.4338: Удаление БД : 
+ (INFO)14:51:39.8568: База данных успешно удалена
+ (INFO)14:51:39.8568: Обновление БД : 
+ (INFO)14:51:40.8889: Установка миграции 1.1.1234_InitTable
+ (INFO)14:51:41.0359: Установка миграции 1.1.1421_Orders
+ (INFO)14:51:41.0669: Создание представления изменений в версии для таблиц 
+ (INFO)14:51:41.0909: Успешно проведено обновление до миграции 1.1.1421_Orders
+ (INFO)15:00:04.6207: Операция: Пересоздание БД
+ (INFO)15:00:04.6577: Cтроки подключения:
+ (INFO)15:00:04.6577: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)15:00:04.6577: Удаление БД : 
+ (INFO)15:00:08.1029: База данных успешно удалена
+ (INFO)15:00:08.1039: Обновление БД : 
+ (INFO)15:00:08.9029: Установка миграции 1.1.1234_InitTable
+ (INFO)15:00:09.0729: Установка миграции 1.1.1421_Orders
+ (INFO)15:00:09.1029: Создание представления изменений в версии для таблиц 
+ (INFO)15:00:09.1239: Успешно проведено обновление до миграции 1.1.1421_Orders
+ (INFO)15:02:30.2730: Операция: Пересоздание БД
+ (INFO)15:02:30.2730: Cтроки подключения:
+ (INFO)15:02:30.2730: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)15:02:30.2730: Удаление БД : 
+ (INFO)15:02:33.4982: База данных успешно удалена
+ (INFO)15:02:33.4982: Обновление БД : 
+ (INFO)15:02:34.3502: Установка миграции 1.1.1234_InitTable
+ (INFO)15:02:34.5002: Установка миграции 1.1.1421_Orders
+ (INFO)15:02:34.5262: Создание представления изменений в версии для таблиц 
+ (INFO)15:02:34.5452: Успешно проведено обновление до миграции 1.1.1421_Orders
+ (INFO)15:12:21.0768: Операция: Пересоздание БД
+ (INFO)15:12:21.0768: Cтроки подключения:
+ (INFO)15:12:21.0768: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)15:12:21.0768: Удаление БД : 
+ (INFO)15:12:24.2910: База данных успешно удалена
+ (INFO)15:12:24.2910: Обновление БД : 
+ (INFO)15:12:25.0850: Установка миграции 1.1.1234_InitTable
+ (INFO)15:12:25.2190: Установка миграции 1.1.1421_Orders
+ (INFO)15:12:25.2580: Создание представления изменений в версии для таблиц 
+ (INFO)15:12:25.2750: Успешно проведено обновление до миграции 1.1.1421_Orders
+ (INFO)15:30:34.9574: Операция: Пересоздание БД
+ (INFO)15:30:34.9904: Cтроки подключения:
+ (INFO)15:30:34.9904: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)15:30:34.9904: Удаление БД : 
+ (INFO)15:30:35.2254: База данных успешно удалена
+ (INFO)15:30:35.2254: Обновление БД : 
+ (INFO)15:30:36.1974: Установка миграции 1.1.1234_InitTable
+ (INFO)15:30:36.3844: Установка миграции 1.1.1421_Orders
+ (INFO)15:30:36.4314: Создание представления изменений в версии для таблиц 
+ (INFO)15:30:36.4754: Успешно проведено обновление до миграции 1.1.1421_Orders
+ (INFO)16:41:20.3262: Операция: Пересоздание БД
+ (INFO)16:41:20.3422: Cтроки подключения:
+ (INFO)16:41:20.3422: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)16:41:20.3422: Удаление БД : 
+ (INFO)16:41:20.8162: База данных успешно удалена
+ (INFO)16:41:20.8182: Обновление БД : 
+ (INFO)16:41:21.7903: Установка миграции 1.1.1234_InitTable
+ (INFO)16:41:21.9213: Установка миграции 1.1.1421_Orders
+ (INFO)16:41:21.9803: Создание представления изменений в версии для таблиц 
+ (INFO)16:41:21.9993: Успешно проведено обновление до миграции 1.1.1421_Orders
+ (INFO)16:50:41.4363: Операция: Пересоздание БД
+ (INFO)16:50:41.4443: Cтроки подключения:
+ (INFO)16:50:41.4443: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)16:50:41.4443: Удаление БД : 
+ (INFO)16:50:44.6425: База данных успешно удалена
+ (INFO)16:50:44.6425: Обновление БД : 
+ (INFO)16:50:45.4455: Установка миграции 1.1.1234_InitTable
+ (INFO)16:50:45.5825: Установка миграции 1.1.1421_Orders
+ (INFO)16:50:45.6175: Создание представления изменений в версии для таблиц 
+ (INFO)16:50:45.6355: Успешно проведено обновление до миграции 1.1.1421_Orders
+ (INFO)17:39:12.7478: Операция: Пересоздание БД
+ (INFO)17:39:12.7478: Cтроки подключения:
+ (INFO)17:39:12.7478: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)17:39:12.7628: Удаление БД : 
+ (INFO)17:39:13.1318: База данных успешно удалена
+ (INFO)17:39:13.1318: Обновление БД : 
+ (INFO)17:39:14.0529: Установка миграции 1.1.1234_InitTable
+ (INFO)17:39:14.1619: Установка миграции 1.1.1421_Orders
+ (INFO)17:39:14.2339: Создание представления изменений в версии для таблиц 
+ (INFO)17:39:14.2579: Успешно проведено обновление до миграции 1.1.1421_Orders
+ (INFO)17:39:29.8848: Операция: Пересоздание БД
+ (INFO)17:39:29.8918: Cтроки подключения:
+ (INFO)17:39:29.8918: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)17:39:29.8918: Удаление БД : 
+ (INFO)17:39:30.0608: База данных успешно удалена
+ (INFO)17:39:30.0608: Обновление БД : 
+ (INFO)17:39:30.8408: Установка миграции 1.1.1234_InitTable
+ (INFO)17:39:31.0048: Установка миграции 1.1.1421_Orders
+ (INFO)17:39:31.0498: Создание представления изменений в версии для таблиц 
+ (INFO)17:39:31.0748: Успешно проведено обновление до миграции 1.1.1421_Orders
+ (INFO)17:43:58.2731: Операция: Пересоздание БД
+ (INFO)17:43:58.2731: Cтроки подключения:
+ (INFO)17:43:58.2891: Data Source=.;Initial Catalog=VentProm;user=sa;password=sa;
+ (INFO)17:43:58.2891: Удаление БД : 
+ (INFO)17:44:01.5273: База данных успешно удалена
+ (INFO)17:44:01.5273: Обновление БД : 
+ (INFO)17:44:02.4014: Установка миграции 1.1.1234_InitTable
+ (INFO)17:44:02.5244: Установка миграции 1.1.1421_Orders
+ (INFO)17:44:02.5554: Создание представления изменений в версии для таблиц 
+ (INFO)17:44:02.5724: Успешно проведено обновление до миграции 1.1.1421_Orders

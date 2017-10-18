@@ -1,0 +1,323 @@
+ (INFO)19:18:46.6141: Операция: Пересоздание БД
+ (INFO)19:18:46.6221: Cтроки подключения:
+ (INFO)19:18:46.6221: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:18:46.6221: Удаление БД : 
+ (INFO)19:18:47.0832: База данных не обнаружена
+ (INFO)19:18:47.0842: Обновление БД : 
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-07-05 19:18:57.1837-------------
+ 
+ Message: StartIndex cannot be less than zero.
+Parameter name: startIndex
+ 
+ Exception:
+ 
+ System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Cabinet.Common.Migrations.Utils.MigrationComparer.Compare(String x, String y) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\MigrationComparer.cs:line 29
+   at System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   at System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Cabinet.Common.Migrations.MigrationAssembly.get_MigrationIds() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationAssembly.cs:line 16
+   at Cabinet.Common.Migrations.DbMigrator.GetLocalMigrations() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 132
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetLastMigrationId(DbMigrator migrator, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 43
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetMigrationId(DbMigrator migrator, String version, String migration, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 32
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 174
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)19:19:06.6693: Операция: Пересоздание БД
+ (INFO)19:19:06.6693: Cтроки подключения:
+ (INFO)19:19:06.6693: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:19:06.6693: Удаление БД : 
+ (INFO)19:19:06.7833: База данных не обнаружена
+ (INFO)19:19:06.7833: Обновление БД : 
+
+ ---FATAL----in Cabinet.DataBase----on PORNSTAR----2017-07-05 19:19:16.8069-------------
+ 
+ Message: StartIndex cannot be less than zero.
+Parameter name: startIndex
+ 
+ Exception:
+ 
+ System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Cabinet.Common.Migrations.Utils.MigrationComparer.Compare(String x, String y) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\MigrationComparer.cs:line 29
+   at System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   at System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Cabinet.Common.Migrations.MigrationAssembly.get_MigrationIds() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationAssembly.cs:line 16
+   at Cabinet.Common.Migrations.DbMigrator.GetLocalMigrations() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 132
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetLastMigrationId(DbMigrator migrator, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 43
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetMigrationId(DbMigrator migrator, String version, String migration, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 32
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 174
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)19:19:38.4441: Операция: Пересоздание БД
+ (INFO)19:19:38.4441: Cтроки подключения:
+ (INFO)19:19:38.4441: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:19:38.4441: Удаление БД : 
+ (INFO)19:19:38.5991: База данных не обнаружена
+ (INFO)19:19:38.5991: Обновление БД : 
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-07-05 19:19:48.6387-------------
+ 
+ Message: StartIndex cannot be less than zero.
+Parameter name: startIndex
+ 
+ Exception:
+ 
+ System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Cabinet.Common.Migrations.Utils.MigrationComparer.Compare(String x, String y) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\MigrationComparer.cs:line 29
+   at System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   at System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Cabinet.Common.Migrations.MigrationAssembly.get_MigrationIds() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationAssembly.cs:line 16
+   at Cabinet.Common.Migrations.DbMigrator.GetLocalMigrations() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 132
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetLastMigrationId(DbMigrator migrator, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 43
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetMigrationId(DbMigrator migrator, String version, String migration, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 32
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 174
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)19:20:18.7864: Операция: Пересоздание БД
+ (INFO)19:20:18.7864: Cтроки подключения:
+ (INFO)19:20:18.7864: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:20:18.7864: Удаление БД : 
+ (INFO)19:20:19.3024: База данных не обнаружена
+ (INFO)19:20:19.3024: Обновление БД : 
+ (INFO)19:20:54.1124: Операция: Пересоздание БД
+ (INFO)19:20:54.1394: Cтроки подключения:
+ (INFO)19:20:54.1394: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:20:54.1564: Удаление БД : 
+ (INFO)19:20:54.3084: База данных не обнаружена
+ (INFO)19:20:54.3084: Обновление БД : 
+ (INFO)19:21:04.6670: Операция: Пересоздание БД
+ (INFO)19:21:04.6670: Cтроки подключения:
+ (INFO)19:21:04.6670: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:21:04.6670: Удаление БД : 
+ (INFO)19:21:04.8030: База данных не обнаружена
+ (INFO)19:21:04.8030: Обновление БД : 
+ (INFO)19:21:35.3038: Операция: Пересоздание БД
+ (INFO)19:21:35.3038: Cтроки подключения:
+ (INFO)19:21:35.3038: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:21:35.3038: Удаление БД : 
+ (INFO)19:21:35.4788: База данных не обнаружена
+ (INFO)19:21:35.4788: Обновление БД : 
+ (INFO)19:23:25.9181: Операция: Пересоздание БД
+ (INFO)19:23:25.9301: Cтроки подключения:
+ (INFO)19:23:25.9301: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:23:25.9301: Удаление БД : 
+ (INFO)19:23:26.0521: База данных не обнаружена
+ (INFO)19:23:26.0521: Обновление БД : 
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-07-05 19:24:05.9424-------------
+ 
+ Message: StartIndex cannot be less than zero.
+Parameter name: startIndex
+ 
+ Exception:
+ 
+ System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Cabinet.Common.Migrations.Utils.MigrationComparer.Compare(String x, String y) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\MigrationComparer.cs:line 29
+   at System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   at System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Cabinet.Common.Migrations.MigrationAssembly.get_MigrationIds() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationAssembly.cs:line 16
+   at Cabinet.Common.Migrations.DbMigrator.GetLocalMigrations() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 132
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetLastMigrationId(DbMigrator migrator, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 43
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetMigrationId(DbMigrator migrator, String version, String migration, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 32
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 174
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)19:24:38.4423: Операция: Пересоздание БД
+ (INFO)19:24:38.4673: Cтроки подключения:
+ (INFO)19:24:38.4673: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:24:38.4673: Удаление БД : 
+ (INFO)19:24:38.6013: База данных не обнаружена
+ (INFO)19:24:38.6013: Обновление БД : 
+ (INFO)19:26:23.8233: Операция: Пересоздание БД
+ (INFO)19:26:23.8233: Cтроки подключения:
+ (INFO)19:26:23.8233: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:26:23.8233: Удаление БД : 
+ (INFO)19:26:24.0073: База данных не обнаружена
+ (INFO)19:26:24.0073: Обновление БД : 
+ (INFO)19:28:21.2250: Операция: Пересоздание БД
+ (INFO)19:28:21.2410: Cтроки подключения:
+ (INFO)19:28:21.2410: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:28:21.2410: Удаление БД : 
+ (INFO)19:28:21.6350: База данных не обнаружена
+ (INFO)19:28:21.6350: Обновление БД : 
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-07-05 19:29:35.9213-------------
+ 
+ Message: StartIndex cannot be less than zero.
+Parameter name: startIndex
+ 
+ Exception:
+ 
+ System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Cabinet.Common.Migrations.Utils.MigrationComparer.Compare(String x, String y) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\MigrationComparer.cs:line 29
+   at System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   at System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Cabinet.Common.Migrations.MigrationAssembly.get_MigrationIds() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationAssembly.cs:line 16
+   at Cabinet.Common.Migrations.DbMigrator.GetLocalMigrations() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 132
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetLastMigrationId(DbMigrator migrator, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 43
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetMigrationId(DbMigrator migrator, String version, String migration, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 32
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 174
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)19:29:53.2003: Операция: Пересоздание БД
+ (INFO)19:29:53.2093: Cтроки подключения:
+ (INFO)19:29:53.2093: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:29:53.2093: Удаление БД : 
+ (INFO)19:29:53.4773: База данных не обнаружена
+ (INFO)19:29:53.4773: Обновление БД : 
+ (INFO)19:33:16.9739: Операция: Пересоздание БД
+ (INFO)19:33:16.9829: Cтроки подключения:
+ (INFO)19:33:16.9829: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:33:16.9829: Удаление БД : 
+ (INFO)19:33:17.1789: База данных не обнаружена
+ (INFO)19:33:17.1789: Обновление БД : 
+ (INFO)19:34:37.9685: Операция: Пересоздание БД
+ (INFO)19:34:37.9755: Cтроки подключения:
+ (INFO)19:34:37.9755: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:34:37.9755: Удаление БД : 
+ (INFO)19:34:38.1266: База данных не обнаружена
+ (INFO)19:34:38.1266: Обновление БД : 
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-07-05 19:35:23.9472-------------
+ 
+ Message: StartIndex cannot be less than zero.
+Parameter name: startIndex
+ 
+ Exception:
+ 
+ System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Cabinet.Common.Migrations.Utils.MigrationComparer.Compare(String x, String y) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\MigrationComparer.cs:line 29
+   at System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   at System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Cabinet.Common.Migrations.MigrationAssembly.get_MigrationIds() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationAssembly.cs:line 16
+   at Cabinet.Common.Migrations.DbMigrator.GetLocalMigrations() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 132
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetLastMigrationId(DbMigrator migrator, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 43
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetMigrationId(DbMigrator migrator, String version, String migration, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 32
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 174
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)19:35:40.4801: Операция: Пересоздание БД
+ (INFO)19:35:40.4871: Cтроки подключения:
+ (INFO)19:35:40.4871: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:35:40.4871: Удаление БД : 
+ (INFO)19:35:41.1492: База данных не обнаружена
+ (INFO)19:35:41.1492: Обновление БД : 
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-07-05 19:36:02.5894-------------
+ 
+ Message: StartIndex cannot be less than zero.
+Parameter name: startIndex
+ 
+ Exception:
+ 
+ System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Cabinet.Common.Migrations.Utils.MigrationComparer.Compare(String x, String y) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\MigrationComparer.cs:line 29
+   at System.Linq.EnumerableSorter`2.CompareKeys(Int32 index1, Int32 index2)
+   at System.Linq.EnumerableSorter`1.QuickSort(Int32[] map, Int32 left, Int32 right)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Cabinet.Common.Migrations.MigrationAssembly.get_MigrationIds() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationAssembly.cs:line 16
+   at Cabinet.Common.Migrations.DbMigrator.GetLocalMigrations() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 132
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetLastMigrationId(DbMigrator migrator, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 43
+   at Cabinet.Common.Migrations.MigrationIdProvider.GetMigrationId(DbMigrator migrator, String version, String migration, Boolean downgrade) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\MigrationIdProvider.cs:line 32
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 174
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)19:36:50.9302: Операция: Пересоздание БД
+ (INFO)19:36:50.9402: Cтроки подключения:
+ (INFO)19:36:50.9402: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:36:50.9402: Удаление БД : 
+ (INFO)19:36:51.2672: База данных не обнаружена
+ (INFO)19:36:51.2672: Обновление БД : 
+ (INFO)19:37:27.0732: Установка миграции 1.1.170705_InitTable
+ (INFO)19:37:28.3193: Создание представления изменений в версии для таблиц 
+ (INFO)19:37:28.3453: Успешно проведено обновление до миграции 1.1.170705_InitTable
+ (INFO)19:43:09.7328: Операция: Пересоздание БД
+ (INFO)19:43:09.7438: Cтроки подключения:
+ (INFO)19:43:09.7438: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)19:43:09.7438: Удаление БД : 
+ (INFO)19:43:10.0958: База данных не обнаружена
+ (INFO)19:43:10.0958: Обновление БД : 
+ (INFO)19:43:35.7343: Установка миграции 1.1.170705_InitTable
+ (INFO)19:43:35.7783: Создание представления изменений в версии для таблиц 
+ (INFO)19:43:35.7953: Успешно проведено обновление до миграции 1.1.170705_InitTable
+ (INFO)20:09:53.1985: Операция: Пересоздание БД
+ (INFO)20:09:53.2905: Cтроки подключения:
+ (INFO)20:09:53.2905: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)20:09:53.2905: Удаление БД : 
+ (INFO)20:09:53.4605: База данных не обнаружена
+ (INFO)20:09:53.4605: Обновление БД : 
+ (INFO)20:10:04.1682: Установка миграции 1.1.170705_InitTable
+ (INFO)20:12:24.5302: Операция: Пересоздание БД
+ (INFO)20:12:24.5522: Cтроки подключения:
+ (INFO)20:12:24.5522: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)20:12:24.5522: Удаление БД : 
+ (INFO)20:12:24.7252: База данных не обнаружена
+ (INFO)20:12:24.7252: Обновление БД : 
+ (INFO)20:12:35.3558: Установка миграции 1.1.170705_InitTable
+ (INFO)20:12:35.4058: Создание представления изменений в версии для таблиц 
+ (INFO)20:12:35.4378: Успешно проведено обновление до миграции 1.1.170705_InitTable
+ (INFO)20:14:31.7035: Операция: Пересоздание БД
+ (INFO)20:14:31.7445: Cтроки подключения:
+ (INFO)20:14:31.7445: Data Source=.;Initial Catalog=Cabinet;user=sa;password=sa;
+ (INFO)20:14:31.7455: Удаление БД : 
+ (INFO)20:14:31.9275: База данных успешно удалена
+ (INFO)20:14:31.9275: Обновление БД : 
+ (INFO)20:14:32.7585: Установка миграции 1.1.170705_InitTable
+ (INFO)20:14:32.8085: Установка миграции 1.1.17070502_InitTable
+ (INFO)20:14:32.8345: Создание представления изменений в версии для таблиц 
+ (INFO)20:14:32.8515: Успешно проведено обновление до миграции 1.1.17070502_InitTable

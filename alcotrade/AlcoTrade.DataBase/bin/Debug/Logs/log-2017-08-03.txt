@@ -1,0 +1,304 @@
+ (INFO)08:12:19.8981: Операция: Пересоздание БД
+ (INFO)08:12:19.8981: Cтроки подключения:
+ (INFO)08:12:19.8981: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)08:12:19.8981: Удаление БД : 
+ (INFO)08:12:23.2443: База данных успешно удалена
+ (INFO)08:12:23.2443: Обновление БД : 
+ (INFO)08:12:24.1803: Установка миграции 1.1.170705_InitTable
+ (INFO)08:12:24.2953: Установка миграции 1.1.170706_Messages
+ (INFO)08:12:24.3473: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)08:12:24.3883: Установка миграции 1.1.170709_Files
+ (INFO)08:12:24.4124: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)08:12:24.4344: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)08:12:24.4584: Установка миграции 1.3.2105_FundsTable
+ (INFO)08:12:24.6104: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)08:12:24.6534: Установка миграции 1.5.2148_MessageStatus
+ (INFO)08:12:24.6784: Установка миграции 1.5.2259_UsersSeed
+ (INFO)08:12:24.8034: Установка миграции 1.6.1739_FundClients
+ (INFO)08:12:24.8494: Создание представления изменений в версии для таблиц 
+ (INFO)08:12:24.8754: Успешно проведено обновление до миграции 1.6.1739_FundClients
+ (INFO)08:29:31.8031: Операция: Пересоздание БД
+ (INFO)08:29:31.8031: Cтроки подключения:
+ (INFO)08:29:31.8031: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)08:29:31.8031: Удаление БД : 
+ (INFO)08:29:35.0823: База данных успешно удалена
+ (INFO)08:29:35.0823: Обновление БД : 
+ (INFO)08:29:35.9143: Установка миграции 1.1.170705_InitTable
+ (INFO)08:29:35.9804: Установка миграции 1.1.170706_Messages
+ (INFO)08:29:36.0054: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)08:29:36.0394: Установка миграции 1.1.170709_Files
+ (INFO)08:29:36.0554: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)08:29:36.0744: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)08:29:36.0984: Установка миграции 1.3.2105_FundsTable
+ (INFO)08:29:36.2074: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)08:29:36.2454: Установка миграции 1.5.2148_MessageStatus
+ (INFO)08:29:36.2634: Установка миграции 1.5.2259_UsersSeed
+ (INFO)08:29:36.3604: Установка миграции 1.6.1739_FundClients
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-08-03 08:29:36.4144-------------
+ 
+ Message: (t.FundId.Name + t.ClientId.Name)
+ 
+ Exception:
+ 
+ System.Exception: (t.FundId.Name + t.ClientId.Name)
+   at Cabinet.Common.Migrations.Extensions.ExpressionExtensions.GetPropertyAccessList(LambdaExpression propertyAccessExpression) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Extensions\ExpressionExtensions.cs:line 18
+   at Cabinet.Common.Migrations.TableBuilder`1.PrimaryKey(Expression`1 keyExpression, String name, Object anonymousArguments) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\TableBuilder.cs:line 41
+   at Cabinet.DataBase.Version1.FundClients.Up() in G:\Projects\Private\Cabinet\Cabinet.DataBase\Version1\1.6.1739_FundClients.cs:line 15
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 428
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)08:29:45.1119: Операция: Пересоздание БД
+ (INFO)08:29:45.1119: Cтроки подключения:
+ (INFO)08:29:45.1119: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)08:29:45.1119: Удаление БД : 
+ (INFO)08:29:45.2639: База данных не обнаружена
+ (INFO)08:29:45.2639: Обновление БД : 
+ (INFO)08:29:56.0065: Установка миграции 1.1.170705_InitTable
+ (INFO)08:29:56.0755: Установка миграции 1.1.170706_Messages
+ (INFO)08:30:07.0001: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)08:30:07.0251: Установка миграции 1.1.170709_Files
+ (INFO)08:30:07.0461: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)08:30:07.0681: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)08:30:07.0961: Установка миграции 1.3.2105_FundsTable
+ (INFO)08:30:07.1881: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)08:30:07.2561: Установка миграции 1.5.2148_MessageStatus
+ (INFO)08:30:07.2721: Установка миграции 1.5.2259_UsersSeed
+ (INFO)08:30:07.3701: Установка миграции 1.6.1739_FundClients
+ (INFO)08:47:16.9200: Операция: Пересоздание БД
+ (INFO)08:47:16.9260: Cтроки подключения:
+ (INFO)08:47:16.9260: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)08:47:16.9260: Удаление БД : 
+ (INFO)08:47:17.7521: База данных не обнаружена
+ (INFO)08:47:17.7521: Обновление БД : 
+ (INFO)08:47:28.5447: Установка миграции 1.1.170705_InitTable
+ (INFO)08:47:28.6037: Установка миграции 1.1.170706_Messages
+ (INFO)08:47:28.6307: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)08:47:28.6687: Установка миграции 1.1.170709_Files
+ (INFO)08:47:28.6897: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)08:47:28.7067: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)08:47:28.7307: Установка миграции 1.3.2105_FundsTable
+ (INFO)08:47:28.8327: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)08:47:28.8737: Установка миграции 1.5.2148_MessageStatus
+ (INFO)08:47:28.8947: Установка миграции 1.5.2259_UsersSeed
+ (INFO)08:47:29.0107: Установка миграции 1.6.1739_FundClients
+ (INFO)08:51:53.9709: Операция: Пересоздание БД
+ (INFO)08:51:53.9909: Cтроки подключения:
+ (INFO)08:51:53.9909: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)08:51:53.9909: Удаление БД : 
+ (INFO)08:51:54.2259: База данных успешно удалена
+ (INFO)08:51:54.2259: Обновление БД : 
+ (INFO)08:51:55.0539: Установка миграции 1.1.170705_InitTable
+ (INFO)08:51:55.1009: Установка миграции 1.1.170706_Messages
+ (INFO)08:52:13.2320: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)08:52:13.2600: Установка миграции 1.1.170709_Files
+ (INFO)08:52:13.2770: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)08:52:13.3010: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)08:52:13.3340: Установка миграции 1.3.2105_FundsTable
+ (INFO)08:52:13.4750: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)08:52:13.5100: Установка миграции 1.5.2148_MessageStatus
+ (INFO)08:52:13.5420: Установка миграции 1.5.2259_UsersSeed
+ (INFO)08:52:13.6360: Установка миграции 1.6.1739_FundClients
+ (INFO)09:03:23.6703: Операция: Пересоздание БД
+ (INFO)09:03:23.6803: Cтроки подключения:
+ (INFO)09:03:23.6803: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)09:03:23.6803: Удаление БД : 
+ (INFO)09:03:23.9623: База данных успешно удалена
+ (INFO)09:03:23.9623: Обновление БД : 
+ (INFO)09:03:24.8034: Установка миграции 1.1.170705_InitTable
+ (INFO)09:03:24.8524: Установка миграции 1.1.170706_Messages
+ (INFO)09:03:27.9126: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)09:03:27.9536: Установка миграции 1.1.170709_Files
+ (INFO)09:03:27.9726: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)09:03:27.9986: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)09:03:28.0276: Установка миграции 1.3.2105_FundsTable
+ (INFO)09:03:28.1256: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)09:03:28.1926: Установка миграции 1.5.2148_MessageStatus
+ (INFO)09:03:28.2146: Установка миграции 1.5.2259_UsersSeed
+ (INFO)09:03:28.3006: Установка миграции 1.6.1739_FundClients
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-08-03 09:04:02.2855-------------
+ 
+ Message: (t.FundId.Name + t.ClientId.Name)
+ 
+ Exception:
+ 
+ System.Exception: (t.FundId.Name + t.ClientId.Name)
+   at Cabinet.Common.Migrations.Extensions.ExpressionExtensions.GetPropertyAccessList(LambdaExpression propertyAccessExpression) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Extensions\ExpressionExtensions.cs:line 18
+   at Cabinet.Common.Migrations.TableBuilder`1.PrimaryKey(Expression`1 keyExpression, String name, Object anonymousArguments) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\TableBuilder.cs:line 41
+   at Cabinet.DataBase.Version1.FundClients.Up() in G:\Projects\Private\Cabinet\Cabinet.DataBase\Version1\1.6.1739_FundClients.cs:line 15
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 428
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)09:04:11.8501: Операция: Пересоздание БД
+ (INFO)09:04:11.8571: Cтроки подключения:
+ (INFO)09:04:11.8571: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)09:04:11.8571: Удаление БД : 
+ (INFO)09:04:12.0101: База данных не обнаружена
+ (INFO)09:04:12.0101: Обновление БД : 
+ (INFO)09:04:22.7937: Установка миграции 1.1.170705_InitTable
+ (INFO)09:04:22.9207: Установка миграции 1.1.170706_Messages
+ (INFO)09:04:22.9577: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)09:04:22.9767: Установка миграции 1.1.170709_Files
+ (INFO)09:04:22.9957: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)09:04:23.0137: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)09:04:23.0647: Установка миграции 1.3.2105_FundsTable
+ (INFO)09:04:23.1507: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)09:04:23.2127: Установка миграции 1.5.2148_MessageStatus
+ (INFO)09:04:23.2307: Установка миграции 1.5.2259_UsersSeed
+ (INFO)09:04:23.5028: Установка миграции 1.6.1739_FundClients
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-08-03 09:05:55.9890-------------
+ 
+ Message: (t.FundId.Name + t.ClientId.Name)
+ 
+ Exception:
+ 
+ System.Exception: (t.FundId.Name + t.ClientId.Name)
+   at Cabinet.Common.Migrations.Extensions.ExpressionExtensions.GetPropertyAccessList(LambdaExpression propertyAccessExpression) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Extensions\ExpressionExtensions.cs:line 18
+   at Cabinet.Common.Migrations.TableBuilder`1.PrimaryKey(Expression`1 keyExpression, String name, Object anonymousArguments) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\TableBuilder.cs:line 41
+   at Cabinet.DataBase.Version1.FundClients.Up() in G:\Projects\Private\Cabinet\Cabinet.DataBase\Version1\1.6.1739_FundClients.cs:line 15
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 428
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)09:06:13.8161: Операция: Пересоздание БД
+ (INFO)09:06:13.8691: Cтроки подключения:
+ (INFO)09:06:13.8691: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)09:06:13.8691: Удаление БД : 
+ (INFO)09:06:14.0251: База данных не обнаружена
+ (INFO)09:06:14.0251: Обновление БД : 
+ (INFO)09:06:34.5272: Операция: Пересоздание БД
+ (INFO)09:06:34.5332: Cтроки подключения:
+ (INFO)09:06:34.5332: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)09:06:34.5332: Удаление БД : 
+ (INFO)09:06:34.6943: База данных не обнаружена
+ (INFO)09:06:34.6943: Обновление БД : 
+ (INFO)09:06:45.3979: Установка миграции 1.1.170705_InitTable
+ (INFO)09:06:45.4459: Установка миграции 1.1.170706_Messages
+ (INFO)09:06:45.5039: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)09:06:45.5239: Установка миграции 1.1.170709_Files
+ (INFO)09:06:45.5419: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)09:06:45.5579: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)09:06:45.5799: Установка миграции 1.3.2105_FundsTable
+ (INFO)09:06:45.6699: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)09:06:45.7289: Установка миграции 1.5.2148_MessageStatus
+ (INFO)09:06:45.7479: Установка миграции 1.5.2259_UsersSeed
+ (INFO)09:06:45.8409: Установка миграции 1.6.1739_FundClients
+ (INFO)09:12:56.2761: Операция: Пересоздание БД
+ (INFO)09:12:56.2841: Cтроки подключения:
+ (INFO)09:12:56.2841: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)09:12:56.2841: Удаление БД : 
+ (INFO)09:12:56.5071: База данных успешно удалена
+ (INFO)09:12:56.5071: Обновление БД : 
+ (INFO)09:12:57.3241: Установка миграции 1.1.170705_InitTable
+ (INFO)09:12:57.3711: Установка миграции 1.1.170706_Messages
+ (INFO)09:13:21.0165: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)09:13:21.0375: Установка миграции 1.1.170709_Files
+ (INFO)09:13:21.0655: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)09:13:21.0905: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)09:13:21.1155: Установка миграции 1.3.2105_FundsTable
+ (INFO)09:13:21.2365: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)09:13:21.2835: Установка миграции 1.5.2148_MessageStatus
+ (INFO)09:13:21.3175: Установка миграции 1.5.2259_UsersSeed
+ (INFO)09:13:21.3895: Установка миграции 1.6.1739_FundClients
+ (INFO)09:13:24.0707: Создание представления изменений в версии для таблиц 
+ (INFO)09:13:24.1117: Успешно проведено обновление до миграции 1.6.1739_FundClients
+ (INFO)09:31:05.7254: Операция: Пересоздание БД
+ (INFO)09:31:05.7314: Cтроки подключения:
+ (INFO)09:31:05.7314: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)09:31:05.7314: Удаление БД : 
+ (INFO)09:31:08.9356: База данных успешно удалена
+ (INFO)09:31:08.9356: Обновление БД : 
+ (INFO)09:31:09.7166: Установка миграции 1.1.170705_InitTable
+ (INFO)09:31:09.7626: Установка миграции 1.1.170706_Messages
+ (INFO)09:31:09.8236: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)09:31:09.8446: Установка миграции 1.1.170709_Files
+ (INFO)09:31:09.9086: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)09:31:09.9306: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)09:31:09.9666: Установка миграции 1.3.2105_FundsTable
+ (INFO)09:31:10.1026: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)09:31:10.1446: Установка миграции 1.5.2148_MessageStatus
+ (INFO)09:31:10.1756: Установка миграции 1.5.2259_UsersSeed
+ (INFO)09:31:10.2587: Установка миграции 1.6.1739_FundClients
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-08-03 09:33:40.1992-------------
+ 
+ Message: new <>f__AnonymousType2`2(fund = t.FundId, client = t.ClientId)
+ 
+ Exception:
+ 
+ System.Exception: new <>f__AnonymousType2`2(fund = t.FundId, client = t.ClientId)
+   at Cabinet.Common.Migrations.Extensions.ExpressionExtensions.GetPropertyAccessList(LambdaExpression propertyAccessExpression) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Extensions\ExpressionExtensions.cs:line 18
+   at Cabinet.Common.Migrations.TableBuilder`1.PrimaryKey(Expression`1 keyExpression, String name, Object anonymousArguments) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\TableBuilder.cs:line 41
+   at Cabinet.DataBase.Version1.FundClients.Up() in G:\Projects\Private\Cabinet\Cabinet.DataBase\Version1\1.6.1739_FundClients.cs:line 15
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 428
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)09:34:08.7169: Операция: Пересоздание БД
+ (INFO)09:34:08.7239: Cтроки подключения:
+ (INFO)09:34:08.7239: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)09:34:08.7239: Удаление БД : 
+ (INFO)09:34:08.8939: База данных не обнаружена
+ (INFO)09:34:08.8939: Обновление БД : 
+ (INFO)09:34:19.6665: Установка миграции 1.1.170705_InitTable
+ (INFO)09:34:19.7135: Установка миграции 1.1.170706_Messages
+ (INFO)09:34:38.9696: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)09:34:38.9886: Установка миграции 1.1.170709_Files
+ (INFO)09:34:39.0066: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)09:34:39.0316: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)09:34:39.0576: Установка миграции 1.3.2105_FundsTable
+ (INFO)09:34:39.1816: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)09:34:39.2566: Установка миграции 1.5.2148_MessageStatus
+ (INFO)09:34:39.2756: Установка миграции 1.5.2259_UsersSeed
+ (INFO)09:34:39.3676: Установка миграции 1.6.1739_FundClients
+ (INFO)09:45:37.9663: Операция: Пересоздание БД
+ (INFO)09:45:37.9663: Cтроки подключения:
+ (INFO)09:45:37.9663: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)09:45:37.9663: Удаление БД : 
+ (INFO)09:45:38.2603: База данных не обнаружена
+ (INFO)09:45:38.2603: Обновление БД : 
+ (INFO)09:45:49.0059: Установка миграции 1.1.170705_InitTable
+ (INFO)09:45:49.0529: Установка миграции 1.1.170706_Messages
+ (INFO)09:45:49.0749: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)09:45:49.0919: Установка миграции 1.1.170709_Files
+ (INFO)09:45:49.1109: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)09:45:49.1549: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)09:45:49.1789: Установка миграции 1.3.2105_FundsTable
+ (INFO)09:45:49.2639: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)09:45:49.3209: Установка миграции 1.5.2148_MessageStatus
+ (INFO)09:45:49.3429: Установка миграции 1.5.2259_UsersSeed
+ (INFO)09:45:49.4479: Установка миграции 1.6.1739_FundClients
+ (INFO)09:46:07.9460: Создание представления изменений в версии для таблиц 
+ (INFO)09:46:07.9670: Успешно проведено обновление до миграции 1.6.1739_FundClients

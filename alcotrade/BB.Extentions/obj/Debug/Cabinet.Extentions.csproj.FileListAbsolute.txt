@@ -1,0 +1,5 @@
+G:\Projects\Private\Cabinet\Cabinet.Extentions\bin\Debug\Cabinet.Extentions.dll
+G:\Projects\Private\Cabinet\Cabinet.Extentions\bin\Debug\Cabinet.Extentions.pdb
+G:\Projects\Private\Cabinet\Cabinet.Extentions\obj\Debug\Cabinet.Extentions.csprojResolveAssemblyReference.cache
+G:\Projects\Private\Cabinet\Cabinet.Extentions\obj\Debug\Cabinet.Extentions.dll
+G:\Projects\Private\Cabinet\Cabinet.Extentions\obj\Debug\Cabinet.Extentions.pdb

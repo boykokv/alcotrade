@@ -1,0 +1,5 @@
+G:\Projects\Private\ventprom\BB.Extentions\bin\Debug\BB.Extentions.dll
+G:\Projects\Private\ventprom\BB.Extentions\bin\Debug\BB.Extentions.pdb
+G:\Projects\Private\ventprom\BB.Extentions\obj\Debug\BB.Extentions.csprojResolveAssemblyReference.cache
+G:\Projects\Private\ventprom\BB.Extentions\obj\Debug\BB.Extentions.dll
+G:\Projects\Private\ventprom\BB.Extentions\obj\Debug\BB.Extentions.pdb

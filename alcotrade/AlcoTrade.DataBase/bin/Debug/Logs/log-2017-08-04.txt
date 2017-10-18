@@ -1,0 +1,643 @@
+ (INFO)13:45:19.7757: Операция: Пересоздание БД
+ (INFO)13:45:19.7757: Cтроки подключения:
+ (INFO)13:45:19.7757: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)13:45:19.7757: Удаление БД : 
+ (INFO)13:45:23.0699: База данных успешно удалена
+ (INFO)13:45:23.0699: Обновление БД : 
+ (INFO)13:45:23.9929: Установка миграции 1.1.170705_InitTable
+ (INFO)13:45:24.0989: Установка миграции 1.1.170706_Messages
+ (INFO)13:45:24.1469: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)13:45:24.1689: Установка миграции 1.1.170709_Files
+ (INFO)13:45:24.1949: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)13:45:24.2219: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)13:45:24.2469: Установка миграции 1.3.2105_FundsTable
+ (INFO)13:45:24.3549: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)13:45:24.3929: Установка миграции 1.5.2148_MessageStatus
+ (INFO)13:45:24.4139: Установка миграции 1.5.2259_UsersSeed
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-08-04 13:45:24.5659-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId". The conflict occurred in database "Cabinet", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)13:45:45.6812: Операция: Пересоздание БД
+ (INFO)13:45:45.7292: Cтроки подключения:
+ (INFO)13:45:45.7312: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)13:45:45.7312: Удаление БД : 
+ (INFO)13:45:45.8632: База данных не обнаружена
+ (INFO)13:45:45.8632: Обновление БД : 
+ (INFO)13:45:56.5848: Установка миграции 1.1.170705_InitTable
+ (INFO)13:45:56.6348: Установка миграции 1.1.170706_Messages
+ (INFO)13:45:56.6598: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)13:45:56.6778: Установка миграции 1.1.170709_Files
+ (INFO)13:45:56.7298: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)13:45:56.7548: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)13:45:56.7798: Установка миграции 1.3.2105_FundsTable
+ (INFO)13:45:56.8778: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)13:45:56.9138: Установка миграции 1.5.2148_MessageStatus
+ (INFO)13:45:56.9318: Установка миграции 1.5.2259_UsersSeed
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-08-04 13:45:57.1078-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId". The conflict occurred in database "Cabinet", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)13:46:29.5227: Операция: Пересоздание БД
+ (INFO)13:46:29.5227: Cтроки подключения:
+ (INFO)13:46:29.5227: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)13:46:29.5227: Удаление БД : 
+ (INFO)13:46:29.6297: База данных не обнаружена
+ (INFO)13:46:29.6297: Обновление БД : 
+ (INFO)13:46:40.1793: Установка миграции 1.1.170705_InitTable
+ (INFO)13:46:40.2153: Установка миграции 1.1.170706_Messages
+ (INFO)13:46:40.2273: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)13:46:40.2273: Установка миграции 1.1.170709_Files
+ (INFO)13:46:40.2383: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)13:46:40.2383: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)13:46:40.2383: Установка миграции 1.3.2105_FundsTable
+ (INFO)13:46:40.2773: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)13:46:40.2773: Установка миграции 1.5.2148_MessageStatus
+ (INFO)13:46:40.2893: Установка миграции 1.5.2259_UsersSeed
+
+ ---FATAL----in Cabinet.DataBase----on PORNSTAR----2017-08-04 13:46:40.3233-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId". The conflict occurred in database "Cabinet", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)13:47:49.8593: Операция: Пересоздание БД
+ (INFO)13:47:49.9063: Cтроки подключения:
+ (INFO)13:47:49.9063: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)13:47:49.9083: Удаление БД : 
+ (INFO)13:47:50.1563: База данных не обнаружена
+ (INFO)13:47:50.1563: Обновление БД : 
+ (INFO)13:48:00.9059: Установка миграции 1.1.170705_InitTable
+ (INFO)13:48:00.9759: Установка миграции 1.1.170706_Messages
+ (INFO)13:48:00.9989: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)13:48:01.0169: Установка миграции 1.1.170709_Files
+ (INFO)13:48:01.0349: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)13:48:01.0509: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)13:48:01.0759: Установка миграции 1.3.2105_FundsTable
+ (INFO)13:48:01.1949: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)13:48:01.2439: Установка миграции 1.5.2148_MessageStatus
+ (INFO)13:48:01.2639: Установка миграции 1.5.2259_UsersSeed
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-08-04 13:48:01.4009-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "Cabinet", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)13:48:21.0050: Операция: Пересоздание БД
+ (INFO)13:48:21.0050: Cтроки подключения:
+ (INFO)13:48:21.0050: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)13:48:21.0050: Удаление БД : 
+ (INFO)13:48:21.1170: База данных не обнаружена
+ (INFO)13:48:21.1170: Обновление БД : 
+ (INFO)13:48:31.6256: Установка миграции 1.1.170705_InitTable
+ (INFO)13:48:31.6516: Установка миграции 1.1.170706_Messages
+ (INFO)13:48:31.6616: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)13:48:31.6616: Установка миграции 1.1.170709_Files
+ (INFO)13:48:31.6716: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)13:48:31.6716: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)13:48:31.6716: Установка миграции 1.3.2105_FundsTable
+ (INFO)13:48:31.7247: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)13:48:31.7327: Установка миграции 1.5.2148_MessageStatus
+ (INFO)13:48:31.7327: Установка миграции 1.5.2259_UsersSeed
+
+ ---FATAL----in Cabinet.DataBase----on PORNSTAR----2017-08-04 13:48:31.7727-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "Cabinet", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)13:51:02.1933: Операция: Пересоздание БД
+ (INFO)13:51:02.2013: Cтроки подключения:
+ (INFO)13:51:02.2013: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)13:51:02.2013: Удаление БД : 
+ (INFO)13:51:02.4563: База данных не обнаружена
+ (INFO)13:51:02.4563: Обновление БД : 
+ (INFO)13:51:13.2429: Установка миграции 1.1.170705_InitTable
+ (INFO)13:51:13.2979: Установка миграции 1.1.170706_Messages
+ (INFO)13:51:13.3219: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)13:51:13.3409: Установка миграции 1.1.170709_Files
+ (INFO)13:51:13.3589: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)13:51:13.3779: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)13:51:13.4049: Установка миграции 1.3.2105_FundsTable
+ (INFO)13:51:13.5069: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)13:51:13.5439: Установка миграции 1.5.2148_MessageStatus
+ (INFO)13:51:13.5629: Установка миграции 1.5.2259_UsersSeed
+ (INFO)13:53:26.2055: Операция: Пересоздание БД
+ (INFO)13:53:26.2055: Cтроки подключения:
+ (INFO)13:53:26.2055: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)13:53:26.2055: Удаление БД : 
+ (INFO)13:53:29.4077: База данных успешно удалена
+ (INFO)13:53:29.4077: Обновление БД : 
+ (INFO)13:53:30.2047: Установка миграции 1.1.170705_InitTable
+ (INFO)13:53:30.3167: Установка миграции 1.1.170706_Messages
+ (INFO)13:53:30.3387: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)13:53:30.3607: Установка миграции 1.1.170709_Files
+ (INFO)13:53:30.3867: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)13:53:30.4047: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)13:53:30.4487: Установка миграции 1.3.2105_FundsTable
+ (INFO)13:53:30.5707: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)13:53:30.6087: Установка миграции 1.5.2148_MessageStatus
+ (INFO)13:53:30.6287: Установка миграции 1.5.2259_UsersSeed
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-08-04 13:53:41.1634-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "Cabinet", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)13:53:50.2949: Операция: Пересоздание БД
+ (INFO)13:53:50.3009: Cтроки подключения:
+ (INFO)13:53:50.3009: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)13:53:50.3009: Удаление БД : 
+ (INFO)13:53:50.3859: База данных не обнаружена
+ (INFO)13:53:50.3859: Обновление БД : 
+ (INFO)13:54:01.5235: Установка миграции 1.1.170705_InitTable
+ (INFO)13:54:01.5485: Установка миграции 1.1.170706_Messages
+ (INFO)13:54:01.5485: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)13:54:01.5485: Установка миграции 1.1.170709_Files
+ (INFO)13:54:01.5675: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)13:54:01.5675: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)13:54:01.5675: Установка миграции 1.3.2105_FundsTable
+ (INFO)13:54:01.6045: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)13:54:01.6105: Установка миграции 1.5.2148_MessageStatus
+ (INFO)13:54:01.6105: Установка миграции 1.5.2259_UsersSeed
+
+ ---FATAL----in Cabinet.DataBase----on PORNSTAR----2017-08-04 13:54:01.6505-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "Cabinet", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)14:02:09.7054: Операция: Пересоздание БД
+ (INFO)14:02:09.7374: Cтроки подключения:
+ (INFO)14:02:09.7374: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)14:02:09.7374: Удаление БД : 
+ (INFO)14:02:09.9125: База данных не обнаружена
+ (INFO)14:02:09.9125: Обновление БД : 
+ (INFO)14:02:20.7721: Установка миграции 1.1.170705_InitTable
+ (INFO)14:02:20.8391: Установка миграции 1.1.170706_Messages
+ (INFO)14:02:20.8621: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)14:02:20.8791: Установка миграции 1.1.170709_Files
+ (INFO)14:02:20.8961: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)14:02:20.9161: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)14:02:20.9601: Установка миграции 1.3.2105_FundsTable
+ (INFO)14:02:21.0681: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)14:02:21.1201: Установка миграции 1.5.2148_MessageStatus
+ (INFO)14:02:21.1371: Установка миграции 1.5.2259_UsersSeed
+ (INFO)14:07:09.7676: Операция: Пересоздание БД
+ (INFO)14:07:09.7676: Cтроки подключения:
+ (INFO)14:07:09.7676: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)14:07:09.7746: Удаление БД : 
+ (INFO)14:07:13.0098: База данных успешно удалена
+ (INFO)14:07:13.0098: Обновление БД : 
+ (INFO)14:07:13.8328: Установка миграции 1.1.170705_InitTable
+ (INFO)14:07:13.8818: Установка миграции 1.1.170706_Messages
+ (INFO)14:07:13.9058: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)14:07:13.9438: Установка миграции 1.1.170709_Files
+ (INFO)14:07:13.9688: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)14:07:13.9908: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)14:07:14.0148: Установка миграции 1.3.2105_FundsTable
+ (INFO)14:07:14.1209: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)14:07:14.1649: Установка миграции 1.5.2148_MessageStatus
+ (INFO)14:07:14.1839: Установка миграции 1.5.2259_UsersSeed
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-08-04 14:07:18.6691-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "Cabinet", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)14:07:28.7337: Операция: Пересоздание БД
+ (INFO)14:07:28.7337: Cтроки подключения:
+ (INFO)14:07:28.7337: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)14:07:28.7337: Удаление БД : 
+ (INFO)14:07:28.8347: База данных не обнаружена
+ (INFO)14:07:28.8347: Обновление БД : 
+ (INFO)14:07:39.4633: Установка миграции 1.1.170705_InitTable
+ (INFO)14:07:39.4893: Установка миграции 1.1.170706_Messages
+ (INFO)14:07:39.4993: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)14:07:39.4993: Установка миграции 1.1.170709_Files
+ (INFO)14:07:39.5083: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)14:07:39.5083: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)14:07:39.5083: Установка миграции 1.3.2105_FundsTable
+ (INFO)14:07:39.5483: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)14:07:39.5563: Установка миграции 1.5.2148_MessageStatus
+ (INFO)14:07:39.5563: Установка миграции 1.5.2259_UsersSeed
+
+ ---FATAL----in Cabinet.DataBase----on PORNSTAR----2017-08-04 14:07:39.6393-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "Cabinet", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)14:08:40.7928: Операция: Пересоздание БД
+ (INFO)14:08:40.7928: Cтроки подключения:
+ (INFO)14:08:40.7928: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)14:08:40.7928: Удаление БД : 
+ (INFO)14:08:40.9798: База данных не обнаружена
+ (INFO)14:08:40.9798: Обновление БД : 
+ (INFO)14:08:51.7874: Установка миграции 1.1.170705_InitTable
+ (INFO)14:08:51.8414: Установка миграции 1.1.170706_Messages
+ (INFO)14:08:51.8824: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)14:08:51.9004: Установка миграции 1.1.170709_Files
+ (INFO)14:08:51.9184: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)14:08:51.9364: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)14:08:51.9604: Установка миграции 1.3.2105_FundsTable
+ (INFO)14:08:52.0565: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)14:08:52.1095: Установка миграции 1.5.2148_MessageStatus
+ (INFO)14:08:52.1285: Установка миграции 1.5.2259_UsersSeed
+ (INFO)14:08:52.1935: Установка миграции 1.6.1739_FundClients
+ (INFO)14:08:52.2335: Установка миграции 1.7.1403_UserSeed
+
+ ---FATAL----in Cabinet.DataBase.vshost----on PORNSTAR----2017-08-04 14:08:52.4145-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "Cabinet", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)14:08:57.5458: Операция: Пересоздание БД
+ (INFO)14:08:57.5458: Cтроки подключения:
+ (INFO)14:08:57.5458: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)14:08:57.5458: Удаление БД : 
+ (INFO)14:08:57.6498: База данных не обнаружена
+ (INFO)14:08:57.6498: Обновление БД : 
+ (INFO)14:09:08.1914: Установка миграции 1.1.170705_InitTable
+ (INFO)14:09:08.2174: Установка миграции 1.1.170706_Messages
+ (INFO)14:09:08.2274: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)14:09:08.2274: Установка миграции 1.1.170709_Files
+ (INFO)14:09:08.2274: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)14:09:08.2274: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)14:09:08.2454: Установка миграции 1.3.2105_FundsTable
+ (INFO)14:09:08.2764: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)14:09:08.2764: Установка миграции 1.5.2148_MessageStatus
+ (INFO)14:09:08.2764: Установка миграции 1.5.2259_UsersSeed
+ (INFO)14:09:08.2944: Установка миграции 1.6.1739_FundClients
+ (INFO)14:09:08.3104: Установка миграции 1.7.1403_UserSeed
+
+ ---FATAL----in Cabinet.DataBase----on PORNSTAR----2017-08-04 14:09:08.3544-------------
+ 
+ Message: Data seed commit failed
+ 
+ Exception:
+ 
+ System.Data.Entity.Infrastructure.CommitFailedException: Data seed commit failed ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId". The conflict occurred in database "Cabinet", table "dbo.AspNetRoles", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 529
+   --- End of inner exception stack trace ---
+   at Cabinet.Common.Migrations.DbMigrator.ExecuteDataOperations(IEnumerable`1 operations) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 535
+   at Cabinet.Common.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration, Boolean effectOnHistory) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 441
+   at Cabinet.Common.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 306
+   at Cabinet.Common.Migrations.DbMigrator.UpdateInternal(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 271
+   at Cabinet.Common.Migrations.DbMigrator.<>c__DisplayClass30_0.<Update>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 719
+   at Cabinet.Common.Migrations.DbMigrator.Update(String targetMigration) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\DbMigrator.cs:line 266
+   at Cabinet.Common.Migrations.Utils.DbManager`2.UpdateDatabase(DbManagerOptions options) in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 176
+   at Cabinet.Common.Migrations.Utils.DbManager`2.<>c__DisplayClass1_0.<Run>b__0() in G:\Projects\Private\Cabinet\Cabinet.Common.Migrations\Utils\DbManager.cs:line 77
+   at BB.Core.Failover.Execute(Action action, Action`1 onException, Boolean reThrowException, Action onFinally, Boolean programExitOnException) in G:\Projects\Private\Cabinet\BB.Core\Failover.cs:line 26
+ ---------------------------------------------------------------------------------------
+
+ (INFO)14:10:29.7150: Операция: Пересоздание БД
+ (INFO)14:10:29.7240: Cтроки подключения:
+ (INFO)14:10:29.7240: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)14:10:29.7240: Удаление БД : 
+ (INFO)14:10:29.9220: База данных не обнаружена
+ (INFO)14:10:29.9220: Обновление БД : 
+ (INFO)14:10:40.6797: Установка миграции 1.1.170705_InitTable
+ (INFO)14:10:40.7467: Установка миграции 1.1.170706_Messages
+ (INFO)14:10:40.7697: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)14:10:40.7877: Установка миграции 1.1.170709_Files
+ (INFO)14:10:40.8057: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)14:10:40.8257: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)14:10:40.8567: Установка миграции 1.3.2105_FundsTable
+ (INFO)14:10:40.9407: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)14:10:41.0017: Установка миграции 1.5.2148_MessageStatus
+ (INFO)14:10:41.0187: Установка миграции 1.5.2259_UsersSeed
+ (INFO)14:10:41.0747: Установка миграции 1.6.1739_FundClients
+ (INFO)14:10:41.1237: Установка миграции 1.7.1403_UserSeed
+ (INFO)14:10:41.2117: Создание представления изменений в версии для таблиц 
+ (INFO)14:10:41.2347: Успешно проведено обновление до миграции 1.7.1403_UserSeed
+ (INFO)14:10:52.1603: Операция: Пересоздание БД
+ (INFO)14:10:52.1603: Cтроки подключения:
+ (INFO)14:10:52.1603: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)14:10:52.1693: Удаление БД : 
+ (INFO)14:10:52.4493: База данных успешно удалена
+ (INFO)14:10:52.4503: Обновление БД : 
+ (INFO)14:10:53.2334: Установка миграции 1.1.170705_InitTable
+ (INFO)14:10:53.2854: Установка миграции 1.1.170706_Messages
+ (INFO)14:10:53.3334: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)14:10:53.3564: Установка миграции 1.1.170709_Files
+ (INFO)14:10:53.3764: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)14:10:53.3974: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)14:10:53.4304: Установка миграции 1.3.2105_FundsTable
+ (INFO)14:10:53.5314: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)14:10:53.5654: Установка миграции 1.5.2148_MessageStatus
+ (INFO)14:10:53.5884: Установка миграции 1.5.2259_UsersSeed
+ (INFO)14:10:53.6554: Установка миграции 1.6.1739_FundClients
+ (INFO)14:10:53.6874: Установка миграции 1.7.1403_UserSeed
+ (INFO)14:10:53.7614: Создание представления изменений в версии для таблиц 
+ (INFO)14:10:53.7784: Успешно проведено обновление до миграции 1.7.1403_UserSeed
+ (INFO)14:11:00.4498: Операция: Пересоздание БД
+ (INFO)14:11:00.4558: Cтроки подключения:
+ (INFO)14:11:00.4558: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)14:11:00.4558: Удаление БД : 
+ (INFO)14:11:00.6048: База данных успешно удалена
+ (INFO)14:11:00.6048: Обновление БД : 
+ (INFO)14:11:01.1568: Установка миграции 1.1.170705_InitTable
+ (INFO)14:11:01.1828: Установка миграции 1.1.170706_Messages
+ (INFO)14:11:01.1928: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)14:11:01.1928: Установка миграции 1.1.170709_Files
+ (INFO)14:11:01.1928: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)14:11:01.2068: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)14:11:01.2068: Установка миграции 1.3.2105_FundsTable
+ (INFO)14:11:01.2398: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)14:11:01.2398: Установка миграции 1.5.2148_MessageStatus
+ (INFO)14:11:01.2538: Установка миграции 1.5.2259_UsersSeed
+ (INFO)14:11:01.2538: Установка миграции 1.6.1739_FundClients
+ (INFO)14:11:01.2758: Установка миграции 1.7.1403_UserSeed
+ (INFO)14:11:01.2868: Создание представления изменений в версии для таблиц 
+ (INFO)14:11:01.2868: Успешно проведено обновление до миграции 1.7.1403_UserSeed
+ (INFO)14:16:01.2940: Операция: Пересоздание БД
+ (INFO)14:16:01.2940: Cтроки подключения:
+ (INFO)14:16:01.2940: Data Source=.;Initial Catalog=Cabinet;user=lider;password=kodeks;
+ (INFO)14:16:01.2940: Удаление БД : 
+ (INFO)14:16:04.5282: База данных успешно удалена
+ (INFO)14:16:04.5282: Обновление БД : 
+ (INFO)14:16:05.0112: Установка миграции 1.1.170705_InitTable
+ (INFO)14:16:05.0392: Установка миграции 1.1.170706_Messages
+ (INFO)14:16:05.0482: Установка миграции 1.1.170707_MessagesAdj
+ (INFO)14:16:05.0482: Установка миграции 1.1.170709_Files
+ (INFO)14:16:05.0482: Установка миграции 1.1.170709_FilesUserIdentity
+ (INFO)14:16:05.0612: Установка миграции 1.2.2014_MessageAttachements
+ (INFO)14:16:05.0612: Установка миграции 1.3.2105_FundsTable
+ (INFO)14:16:05.0962: Установка миграции 1.4.2105_UserMessageRelations
+ (INFO)14:16:05.1102: Установка миграции 1.5.2148_MessageStatus
+ (INFO)14:16:05.1102: Установка миграции 1.5.2259_UsersSeed
+ (INFO)14:16:05.1362: Установка миграции 1.6.1739_FundClients
+ (INFO)14:16:05.1532: Создание представления изменений в версии для таблиц 
+ (INFO)14:16:05.1592: Успешно проведено обновление до миграции 1.6.1739_FundClients

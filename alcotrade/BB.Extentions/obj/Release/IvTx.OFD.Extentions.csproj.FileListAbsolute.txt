@@ -1,0 +1,5 @@
+G:\Projects\Private\!Ivtex\OFD\common\IvTx.OFD.Extentions\bin\Release\IvTx.OFD.Extentions.dll
+G:\Projects\Private\!Ivtex\OFD\common\IvTx.OFD.Extentions\bin\Release\IvTx.OFD.Extentions.pdb
+G:\Projects\Private\!Ivtex\OFD\common\IvTx.OFD.Extentions\obj\Release\IvTx.OFD.Extentions.csprojResolveAssemblyReference.cache
+G:\Projects\Private\!Ivtex\OFD\common\IvTx.OFD.Extentions\obj\Release\IvTx.OFD.Extentions.dll
+G:\Projects\Private\!Ivtex\OFD\common\IvTx.OFD.Extentions\obj\Release\IvTx.OFD.Extentions.pdb
