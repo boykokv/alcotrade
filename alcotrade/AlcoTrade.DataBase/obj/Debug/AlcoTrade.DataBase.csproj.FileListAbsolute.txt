@@ -1,0 +1,2 @@
+C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\AlcoTrade.DataBase\obj\Debug\AlcoTrade.DataBase.csprojResolveAssemblyReference.cache
+C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\AlcoTrade.DataBase\obj\Debug\AlcoTrade.DataBase.csproj.CoreCompileInputs.cache

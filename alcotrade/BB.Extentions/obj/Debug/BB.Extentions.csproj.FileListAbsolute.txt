@@ -3,3 +3,9 @@ G:\Projects\Private\ventprom\BB.Extentions\bin\Debug\BB.Extentions.pdb
 G:\Projects\Private\ventprom\BB.Extentions\obj\Debug\BB.Extentions.csprojResolveAssemblyReference.cache
 G:\Projects\Private\ventprom\BB.Extentions\obj\Debug\BB.Extentions.dll
 G:\Projects\Private\ventprom\BB.Extentions\obj\Debug\BB.Extentions.pdb
+C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Extentions\bin\Debug\BB.Extentions.dll
+C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Extentions\bin\Debug\BB.Extentions.pdb
+C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Extentions\obj\Debug\BB.Extentions.csprojResolveAssemblyReference.cache
+C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Extentions\obj\Debug\BB.Extentions.csproj.CoreCompileInputs.cache
+C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Extentions\obj\Debug\BB.Extentions.dll
+C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Extentions\obj\Debug\BB.Extentions.pdb
