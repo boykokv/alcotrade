@@ -10,7 +10,7 @@ namespace AlcoTrade.DataBase.Version1
             {
                 Id = c.Int(nullable: false, identity: true),
                 Name = c.String(nullable: false),
-                GoodId = c.Int(nullable: false)
+                GroupId = c.Int(nullable: false)
             }).PrimaryKey(t => t.Id);
 
             CreateTable("GoodGroups", c => new
@@ -19,15 +19,25 @@ namespace AlcoTrade.DataBase.Version1
                 Name = c.String(nullable: false),
             }).PrimaryKey(t => t.Id);
 
-            AddForeignKey("Goods", "GoodId", "GoodGroups", "Id");
+            AddForeignKey("Goods", "GroupId", "GoodGroups", "Id");
+
+            CreateTable("AlcoItem", c => new
+            {
+                Id = c.Int(nullable: false, identity: true),
+                Name = c.String(nullable: false),
+                GoodId = c.Int(nullable: false),
+            }).PrimaryKey(t => t.Id);
+
+            AddForeignKey("AlcoItem", "GoodId", "Goods", "Id");
 
             CreateTable("Bottle", c => new
             {
                 Id = c.Long(nullable: false, identity: true),
-                Name = c.DateTime(nullable: false),
+                Excise = c.String(nullable: false),
+                AlcoId = c.Int(nullable: false),
             }).PrimaryKey(t => t.Id);
 
-            
+            AddForeignKey("Bottle", "AlcoId", "AlcoItem", "Id");
         }
 
         public string Id

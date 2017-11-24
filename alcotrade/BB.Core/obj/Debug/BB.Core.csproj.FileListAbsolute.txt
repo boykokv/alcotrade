@@ -42,17 +42,10 @@ C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\BB.Core.pdb
 C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Newtonsoft.Json.dll
 C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\NLog.dll
 C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Quartz.dll
-C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Common.Logging.Core.dll
-C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Common.Logging.dll
 C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Newtonsoft.Json.xml
 C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\NLog.xml
 C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Quartz.pdb
 C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Quartz.xml
-C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Common.Logging.Core.pdb
-C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Common.Logging.Core.xml
-C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Common.Logging.pdb
-C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\bin\Debug\Common.Logging.xml
-C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\obj\Debug\BB.Core.csprojResolveAssemblyReference.cache
 C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\obj\Debug\BB.Core.csproj.CoreCompileInputs.cache
 C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\obj\Debug\BB.Core.dll
 C:\Users\boy\Documents\GitHub\alcotrade1\alcotrade\BB.Core\obj\Debug\BB.Core.pdb
